@@ -159,6 +159,10 @@
                 var rangeHtml = elem.value;
                 this.locale.customRangeLabel = rangeHtml;
             }
+
+            if (typeof options.locale.isBuddhist === 'boolean'){
+                this.locale.isBuddhist = options.locale.isBuddhist;
+            }
         }
         this.container.addClass(this.locale.direction);
 
